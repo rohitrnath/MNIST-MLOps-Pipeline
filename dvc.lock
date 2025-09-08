@@ -1,0 +1,60 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python src/preprocess_mnist_spark.py --params params.yaml
+    deps:
+    - path: params.yaml
+      hash: md5
+      md5: a5bfd6abbce0e1ee0f49341dc3863f06
+      size: 776
+    - path: src/preprocess_mnist_spark.py
+      hash: md5
+      md5: 0686ca87944e0c96a02d14573928b603
+      size: 3403
+    outs:
+    - path: data/mnist/baseline_distribution.json
+      hash: md5
+      md5: 197863ca5e163dadb05973678969e3eb
+      size: 245
+    - path: data/mnist/test.parquet
+      hash: md5
+      md5: 5642f98cc314f1d92773ea001404e57f.dir
+      size: 2451723
+      nfiles: 82
+    - path: data/mnist/train.parquet
+      hash: md5
+      md5: 5d8c34225c87e739721fb71a4cbfaced.dir
+      size: 14713892
+      nfiles: 482
+  training:
+    cmd: python src/train_mnist_orca.py --params params.yaml
+    deps:
+    - path: data/mnist/test.parquet
+      hash: md5
+      md5: 5642f98cc314f1d92773ea001404e57f.dir
+      size: 2451723
+      nfiles: 82
+    - path: data/mnist/train.parquet
+      hash: md5
+      md5: 5d8c34225c87e739721fb71a4cbfaced.dir
+      size: 14713892
+      nfiles: 482
+    - path: params.yaml
+      hash: md5
+      md5: a5bfd6abbce0e1ee0f49341dc3863f06
+      size: 776
+    - path: src/train_mnist_orca.py
+      hash: md5
+      md5: ec9e29a189c204b736f5c337c2842984
+      size: 9435
+    outs:
+    - path: artifacts
+      hash: md5
+      md5: 4857365b3ba1c27ceae91e8a59519484.dir
+      size: 5299863
+      nfiles: 1
+    - path: mlruns
+      hash: md5
+      md5: db19f7cd63163ee3ca276df2e2d7fa68.dir
+      size: 1778660
+      nfiles: 124
