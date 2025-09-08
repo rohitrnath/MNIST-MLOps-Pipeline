@@ -2399,3 +2399,659 @@
 2025-09-08 22:43:20 INFO  ShutdownHookManager:60 - Deleting directory /tmp/spark-976a1966-88ca-456c-afbc-cee1c4338097
 2025-09-08 22:43:20 INFO  ShutdownHookManager:60 - Deleting directory /tmp/spark-8edc9ee8-64a0-4be1-907f-ce1b6f584df0
 2025-09-08 22:43:20 INFO  ShutdownHookManager:60 - Deleting directory /tmp/spark-976a1966-88ca-456c-afbc-cee1c4338097/pyspark-553fb2bb-8581-439a-a149-6ded396df3e2
+2025-09-08 23:00:13 WARN  SparkContext:72 - Using an existing SparkContext; some configuration may not take effect.
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - Got job 0 (foreachPartition at PythonBigDL.scala:3247) with 8 output partitions
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - Final stage: ResultStage 0 (foreachPartition at PythonBigDL.scala:3247)
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - Parents of final stage: List()
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at PythonBigDL.scala:3246), which has no missing parents
+2025-09-08 23:00:13 INFO  MemoryStore:60 - Block broadcast_0 stored as values in memory (estimated size 3.3 KiB, free 4.1 GiB)
+2025-09-08 23:00:13 INFO  MemoryStore:60 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 2008.0 B, free 4.1 GiB)
+2025-09-08 23:00:13 INFO  BlockManagerInfo:60 - Added broadcast_0_piece0 in memory on 10.32.147.128:41585 (size: 2008.0 B, free: 4.1 GiB)
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - Submitting 8 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at PythonBigDL.scala:3246) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2025-09-08 23:00:13 INFO  TaskSchedulerImpl:60 - Adding task set 0.0 with 8 tasks resource profile 0
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Starting task 0.0 in stage 0.0 (TID 0) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Starting task 1.0 in stage 0.0 (TID 1) (10.32.147.128, executor driver, partition 1, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Starting task 2.0 in stage 0.0 (TID 2) (10.32.147.128, executor driver, partition 2, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Starting task 3.0 in stage 0.0 (TID 3) (10.32.147.128, executor driver, partition 3, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Starting task 4.0 in stage 0.0 (TID 4) (10.32.147.128, executor driver, partition 4, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Starting task 5.0 in stage 0.0 (TID 5) (10.32.147.128, executor driver, partition 5, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Starting task 6.0 in stage 0.0 (TID 6) (10.32.147.128, executor driver, partition 6, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Starting task 7.0 in stage 0.0 (TID 7) (10.32.147.128, executor driver, partition 7, PROCESS_LOCAL, 7364 bytes) 
+2025-09-08 23:00:13 INFO  Executor:60 - Running task 3.0 in stage 0.0 (TID 3)
+2025-09-08 23:00:13 INFO  Executor:60 - Running task 0.0 in stage 0.0 (TID 0)
+2025-09-08 23:00:13 INFO  Executor:60 - Running task 2.0 in stage 0.0 (TID 2)
+2025-09-08 23:00:13 INFO  Executor:60 - Running task 1.0 in stage 0.0 (TID 1)
+2025-09-08 23:00:13 INFO  Executor:60 - Running task 7.0 in stage 0.0 (TID 7)
+2025-09-08 23:00:13 INFO  Executor:60 - Running task 5.0 in stage 0.0 (TID 5)
+2025-09-08 23:00:13 INFO  Executor:60 - Running task 6.0 in stage 0.0 (TID 6)
+2025-09-08 23:00:13 INFO  Executor:60 - Running task 4.0 in stage 0.0 (TID 4)
+2025-09-08 23:00:13 INFO  Executor:60 - Finished task 4.0 in stage 0.0 (TID 4). 935 bytes result sent to driver
+2025-09-08 23:00:13 INFO  Executor:60 - Finished task 6.0 in stage 0.0 (TID 6). 935 bytes result sent to driver
+2025-09-08 23:00:13 INFO  Executor:60 - Finished task 3.0 in stage 0.0 (TID 3). 935 bytes result sent to driver
+2025-09-08 23:00:13 INFO  Executor:60 - Finished task 0.0 in stage 0.0 (TID 0). 935 bytes result sent to driver
+2025-09-08 23:00:13 INFO  Executor:60 - Finished task 5.0 in stage 0.0 (TID 5). 892 bytes result sent to driver
+2025-09-08 23:00:13 INFO  Executor:60 - Finished task 1.0 in stage 0.0 (TID 1). 892 bytes result sent to driver
+2025-09-08 23:00:13 INFO  Executor:60 - Finished task 7.0 in stage 0.0 (TID 7). 892 bytes result sent to driver
+2025-09-08 23:00:13 INFO  Executor:60 - Finished task 2.0 in stage 0.0 (TID 2). 892 bytes result sent to driver
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Finished task 4.0 in stage 0.0 (TID 4) in 228 ms on 10.32.147.128 (executor driver) (1/8)
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Finished task 6.0 in stage 0.0 (TID 6) in 229 ms on 10.32.147.128 (executor driver) (2/8)
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Finished task 3.0 in stage 0.0 (TID 3) in 231 ms on 10.32.147.128 (executor driver) (3/8)
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Finished task 2.0 in stage 0.0 (TID 2) in 231 ms on 10.32.147.128 (executor driver) (4/8)
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Finished task 1.0 in stage 0.0 (TID 1) in 232 ms on 10.32.147.128 (executor driver) (5/8)
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Finished task 0.0 in stage 0.0 (TID 0) in 242 ms on 10.32.147.128 (executor driver) (6/8)
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Finished task 5.0 in stage 0.0 (TID 5) in 231 ms on 10.32.147.128 (executor driver) (7/8)
+2025-09-08 23:00:13 INFO  TaskSetManager:60 - Finished task 7.0 in stage 0.0 (TID 7) in 232 ms on 10.32.147.128 (executor driver) (8/8)
+2025-09-08 23:00:13 INFO  TaskSchedulerImpl:60 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - ResultStage 0 (foreachPartition at PythonBigDL.scala:3247) finished in 0.322 s
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:13 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 0: Stage finished
+2025-09-08 23:00:13 INFO  DAGScheduler:60 - Job 0 finished: foreachPartition at PythonBigDL.scala:3247, took 0.338917 s
+2025-09-08 23:00:16 INFO  DAGScheduler:60 - Registering RDD 3 (coalesce at NativeMethodAccessorImpl.java:0) as input to shuffle 0
+2025-09-08 23:00:16 INFO  DAGScheduler:60 - Got job 1 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) with 1 output partitions
+2025-09-08 23:00:16 INFO  DAGScheduler:60 - Final stage: ResultStage 2 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201)
+2025-09-08 23:00:16 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 1)
+2025-09-08 23:00:16 INFO  DAGScheduler:60 - Missing parents: List(ShuffleMapStage 1)
+2025-09-08 23:00:16 INFO  DAGScheduler:60 - Submitting ShuffleMapStage 1 (MapPartitionsRDD[3] at coalesce at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-09-08 23:00:16 INFO  MemoryStore:60 - Block broadcast_1 stored as values in memory (estimated size 7.6 KiB, free 4.1 GiB)
+2025-09-08 23:00:16 INFO  MemoryStore:60 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.7 KiB, free 4.1 GiB)
+2025-09-08 23:00:16 INFO  BlockManagerInfo:60 - Added broadcast_1_piece0 in memory on 10.32.147.128:41585 (size: 4.7 KiB, free: 4.1 GiB)
+2025-09-08 23:00:16 INFO  DAGScheduler:60 - Submitting 32 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[3] at coalesce at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+2025-09-08 23:00:16 INFO  TaskSchedulerImpl:60 - Adding task set 1.0 with 32 tasks resource profile 0
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 0.0 in stage 1.0 (TID 8) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 1.0 in stage 1.0 (TID 9) (10.32.147.128, executor driver, partition 1, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 2.0 in stage 1.0 (TID 10) (10.32.147.128, executor driver, partition 2, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 3.0 in stage 1.0 (TID 11) (10.32.147.128, executor driver, partition 3, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 4.0 in stage 1.0 (TID 12) (10.32.147.128, executor driver, partition 4, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 5.0 in stage 1.0 (TID 13) (10.32.147.128, executor driver, partition 5, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 6.0 in stage 1.0 (TID 14) (10.32.147.128, executor driver, partition 6, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 7.0 in stage 1.0 (TID 15) (10.32.147.128, executor driver, partition 7, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 1.0 in stage 1.0 (TID 9)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 3.0 in stage 1.0 (TID 11)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 4.0 in stage 1.0 (TID 12)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 2.0 in stage 1.0 (TID 10)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 6.0 in stage 1.0 (TID 14)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 7.0 in stage 1.0 (TID 15)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 5.0 in stage 1.0 (TID 13)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 0.0 in stage 1.0 (TID 8)
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 275, boot = 232, init = 42, finish = 1
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 272, boot = 225, init = 47, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 274, boot = 233, init = 41, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 276, boot = 230, init = 45, finish = 1
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 275, boot = 226, init = 49, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 280, boot = 235, init = 45, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 276, boot = 227, init = 48, finish = 1
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 275, boot = 232, init = 43, finish = 0
+2025-09-08 23:00:16 INFO  BlockManagerInfo:60 - Removed broadcast_0_piece0 on 10.32.147.128:41585 in memory (size: 2008.0 B, free: 4.1 GiB)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 7.0 in stage 1.0 (TID 15). 1538 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 2.0 in stage 1.0 (TID 10). 1538 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 3.0 in stage 1.0 (TID 11). 1538 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 5.0 in stage 1.0 (TID 13). 1538 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 4.0 in stage 1.0 (TID 12). 1538 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 0.0 in stage 1.0 (TID 8). 1538 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 8.0 in stage 1.0 (TID 16) (10.32.147.128, executor driver, partition 8, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 8.0 in stage 1.0 (TID 16)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 6.0 in stage 1.0 (TID 14). 1538 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 1.0 in stage 1.0 (TID 9). 1538 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 9.0 in stage 1.0 (TID 17) (10.32.147.128, executor driver, partition 9, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 9.0 in stage 1.0 (TID 17)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 10.0 in stage 1.0 (TID 18) (10.32.147.128, executor driver, partition 10, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 10.0 in stage 1.0 (TID 18)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 7.0 in stage 1.0 (TID 15) in 473 ms on 10.32.147.128 (executor driver) (1/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 2.0 in stage 1.0 (TID 10) in 476 ms on 10.32.147.128 (executor driver) (2/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 11.0 in stage 1.0 (TID 19) (10.32.147.128, executor driver, partition 11, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  PythonAccumulatorV2:60 - Connected to AccumulatorServer at host: 127.0.0.1 port: 49227
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 3.0 in stage 1.0 (TID 11) in 477 ms on 10.32.147.128 (executor driver) (3/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 11.0 in stage 1.0 (TID 19)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 4.0 in stage 1.0 (TID 12) in 476 ms on 10.32.147.128 (executor driver) (4/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 12.0 in stage 1.0 (TID 20) (10.32.147.128, executor driver, partition 12, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 0.0 in stage 1.0 (TID 8) in 481 ms on 10.32.147.128 (executor driver) (5/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 12.0 in stage 1.0 (TID 20)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 13.0 in stage 1.0 (TID 21) (10.32.147.128, executor driver, partition 13, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 13.0 in stage 1.0 (TID 21)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 5.0 in stage 1.0 (TID 13) in 477 ms on 10.32.147.128 (executor driver) (6/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 14.0 in stage 1.0 (TID 22) (10.32.147.128, executor driver, partition 14, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 1.0 in stage 1.0 (TID 9) in 482 ms on 10.32.147.128 (executor driver) (7/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 14.0 in stage 1.0 (TID 22)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 15.0 in stage 1.0 (TID 23) (10.32.147.128, executor driver, partition 15, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 15.0 in stage 1.0 (TID 23)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 6.0 in stage 1.0 (TID 14) in 480 ms on 10.32.147.128 (executor driver) (8/32)
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 44, boot = -176, init = 220, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 44, boot = -174, init = 218, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 43, boot = -177, init = 220, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 41, boot = -183, init = 224, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 45, boot = -178, init = 223, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 48, boot = -177, init = 225, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 47, boot = -178, init = 225, finish = 0
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 8.0 in stage 1.0 (TID 16). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 10.0 in stage 1.0 (TID 18). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 46, boot = -176, init = 222, finish = 0
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 16.0 in stage 1.0 (TID 24) (10.32.147.128, executor driver, partition 16, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 16.0 in stage 1.0 (TID 24)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 8.0 in stage 1.0 (TID 16) in 62 ms on 10.32.147.128 (executor driver) (9/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 17.0 in stage 1.0 (TID 25) (10.32.147.128, executor driver, partition 17, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 10.0 in stage 1.0 (TID 18) in 61 ms on 10.32.147.128 (executor driver) (10/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 17.0 in stage 1.0 (TID 25)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 9.0 in stage 1.0 (TID 17). 1452 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 15.0 in stage 1.0 (TID 23). 1452 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 11.0 in stage 1.0 (TID 19). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 18.0 in stage 1.0 (TID 26) (10.32.147.128, executor driver, partition 18, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 18.0 in stage 1.0 (TID 26)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 9.0 in stage 1.0 (TID 17) in 67 ms on 10.32.147.128 (executor driver) (11/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 19.0 in stage 1.0 (TID 27) (10.32.147.128, executor driver, partition 19, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 19.0 in stage 1.0 (TID 27)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 15.0 in stage 1.0 (TID 23) in 61 ms on 10.32.147.128 (executor driver) (12/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 20.0 in stage 1.0 (TID 28) (10.32.147.128, executor driver, partition 20, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 11.0 in stage 1.0 (TID 19) in 66 ms on 10.32.147.128 (executor driver) (13/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 20.0 in stage 1.0 (TID 28)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 12.0 in stage 1.0 (TID 20). 1452 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 13.0 in stage 1.0 (TID 21). 1452 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 21.0 in stage 1.0 (TID 29) (10.32.147.128, executor driver, partition 21, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 21.0 in stage 1.0 (TID 29)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 12.0 in stage 1.0 (TID 20) in 71 ms on 10.32.147.128 (executor driver) (14/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 22.0 in stage 1.0 (TID 30) (10.32.147.128, executor driver, partition 22, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 22.0 in stage 1.0 (TID 30)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 13.0 in stage 1.0 (TID 21) in 71 ms on 10.32.147.128 (executor driver) (15/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 14.0 in stage 1.0 (TID 22). 1452 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 23.0 in stage 1.0 (TID 31) (10.32.147.128, executor driver, partition 23, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 23.0 in stage 1.0 (TID 31)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 14.0 in stage 1.0 (TID 22) in 73 ms on 10.32.147.128 (executor driver) (16/32)
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 42, boot = -13, init = 55, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 42, boot = -15, init = 57, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 48, boot = -12, init = 60, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 43, boot = -16, init = 59, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 44, boot = -15, init = 59, finish = 0
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 17.0 in stage 1.0 (TID 25). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 16.0 in stage 1.0 (TID 24). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 24.0 in stage 1.0 (TID 32) (10.32.147.128, executor driver, partition 24, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 24.0 in stage 1.0 (TID 32)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 18.0 in stage 1.0 (TID 26). 1452 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 25.0 in stage 1.0 (TID 33) (10.32.147.128, executor driver, partition 25, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 25.0 in stage 1.0 (TID 33)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 17.0 in stage 1.0 (TID 25) in 60 ms on 10.32.147.128 (executor driver) (17/32)
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 41, boot = -16, init = 57, finish = 0
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 40, boot = -17, init = 57, finish = 0
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 16.0 in stage 1.0 (TID 24) in 62 ms on 10.32.147.128 (executor driver) (18/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 26.0 in stage 1.0 (TID 34) (10.32.147.128, executor driver, partition 26, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 26.0 in stage 1.0 (TID 34)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 18.0 in stage 1.0 (TID 26) in 57 ms on 10.32.147.128 (executor driver) (19/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 20.0 in stage 1.0 (TID 28). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 19.0 in stage 1.0 (TID 27). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  PythonRunner:60 - Times: total = 42, boot = -19, init = 61, finish = 0
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 27.0 in stage 1.0 (TID 35) (10.32.147.128, executor driver, partition 27, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 27.0 in stage 1.0 (TID 35)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 28.0 in stage 1.0 (TID 36) (10.32.147.128, executor driver, partition 28, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 19.0 in stage 1.0 (TID 27) in 63 ms on 10.32.147.128 (executor driver) (20/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 28.0 in stage 1.0 (TID 36)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 20.0 in stage 1.0 (TID 28) in 62 ms on 10.32.147.128 (executor driver) (21/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 22.0 in stage 1.0 (TID 30). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 29.0 in stage 1.0 (TID 37) (10.32.147.128, executor driver, partition 29, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 21.0 in stage 1.0 (TID 29). 1495 bytes result sent to driver
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 29.0 in stage 1.0 (TID 37)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 22.0 in stage 1.0 (TID 30) in 57 ms on 10.32.147.128 (executor driver) (22/32)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 30.0 in stage 1.0 (TID 38) (10.32.147.128, executor driver, partition 30, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 30.0 in stage 1.0 (TID 38)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 21.0 in stage 1.0 (TID 29) in 59 ms on 10.32.147.128 (executor driver) (23/32)
+2025-09-08 23:00:16 INFO  Executor:60 - Finished task 23.0 in stage 1.0 (TID 31). 1452 bytes result sent to driver
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Starting task 31.0 in stage 1.0 (TID 39) (10.32.147.128, executor driver, partition 31, PROCESS_LOCAL, 7359 bytes) 
+2025-09-08 23:00:16 INFO  Executor:60 - Running task 31.0 in stage 1.0 (TID 39)
+2025-09-08 23:00:16 INFO  TaskSetManager:60 - Finished task 23.0 in stage 1.0 (TID 31) in 59 ms on 10.32.147.128 (executor driver) (24/32)
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 44, boot = -7, init = 50, finish = 1
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 42, boot = -9, init = 51, finish = 0
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 48, boot = -12, init = 60, finish = 0
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 26.0 in stage 1.0 (TID 34). 1495 bytes result sent to driver
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 40, boot = -9, init = 49, finish = 0
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 42, boot = -14, init = 56, finish = 0
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 44, boot = -6, init = 50, finish = 0
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 25.0 in stage 1.0 (TID 33). 1495 bytes result sent to driver
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 26.0 in stage 1.0 (TID 34) in 55 ms on 10.32.147.128 (executor driver) (25/32)
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 25.0 in stage 1.0 (TID 33) in 56 ms on 10.32.147.128 (executor driver) (26/32)
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 24.0 in stage 1.0 (TID 32). 1452 bytes result sent to driver
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 24.0 in stage 1.0 (TID 32) in 61 ms on 10.32.147.128 (executor driver) (27/32)
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 48, boot = -9, init = 57, finish = 0
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 44, boot = -9, init = 53, finish = 0
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 29.0 in stage 1.0 (TID 37). 1495 bytes result sent to driver
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 29.0 in stage 1.0 (TID 37) in 55 ms on 10.32.147.128 (executor driver) (28/32)
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 28.0 in stage 1.0 (TID 36). 1495 bytes result sent to driver
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 28.0 in stage 1.0 (TID 36) in 57 ms on 10.32.147.128 (executor driver) (29/32)
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 27.0 in stage 1.0 (TID 35). 1452 bytes result sent to driver
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 27.0 in stage 1.0 (TID 35) in 61 ms on 10.32.147.128 (executor driver) (30/32)
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 30.0 in stage 1.0 (TID 38). 1452 bytes result sent to driver
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 30.0 in stage 1.0 (TID 38) in 58 ms on 10.32.147.128 (executor driver) (31/32)
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 31.0 in stage 1.0 (TID 39). 1452 bytes result sent to driver
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 31.0 in stage 1.0 (TID 39) in 59 ms on 10.32.147.128 (executor driver) (32/32)
+2025-09-08 23:00:17 INFO  TaskSchedulerImpl:60 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - ShuffleMapStage 1 (coalesce at NativeMethodAccessorImpl.java:0) finished in 0.682 s
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - looking for newly runnable stages
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - running: Set()
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - waiting: Set(ResultStage 2)
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - failed: Set()
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - Submitting ResultStage 2 (PythonRDD[7] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201), which has no missing parents
+2025-09-08 23:00:17 INFO  MemoryStore:60 - Block broadcast_2 stored as values in memory (estimated size 8.6 KiB, free 4.1 GiB)
+2025-09-08 23:00:17 INFO  MemoryStore:60 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 4.1 GiB)
+2025-09-08 23:00:17 INFO  BlockManagerInfo:60 - Added broadcast_2_piece0 in memory on 10.32.147.128:41585 (size: 5.1 KiB, free: 4.1 GiB)
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 2 (PythonRDD[7] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:17 INFO  TaskSchedulerImpl:60 - Adding task set 2.0 with 1 tasks resource profile 0
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Starting task 0.0 in stage 2.0 (TID 40) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:17 INFO  TaskSchedulerImpl:60 - Registered BarrierCoordinator endpoint
+2025-09-08 23:00:17 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 2.
+2025-09-08 23:00:17 INFO  Executor:60 - Running task 0.0 in stage 2.0 (TID 40)
+2025-09-08 23:00:17 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:17 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 4 ms
+2025-09-08 23:00:17 INFO  PythonRunner:60 - Times: total = 475, boot = -56, init = 531, finish = 0
+2025-09-08 23:00:17 INFO  Executor:60 - Finished task 0.0 in stage 2.0 (TID 40). 2074 bytes result sent to driver
+2025-09-08 23:00:17 INFO  TaskSetManager:60 - Finished task 0.0 in stage 2.0 (TID 40) in 499 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:17 INFO  TaskSchedulerImpl:60 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - ResultStage 2 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) finished in 0.507 s
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:17 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 2: Stage finished
+2025-09-08 23:00:17 INFO  DAGScheduler:60 - Job 1 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201, took 1.211633 s
+2025-09-08 23:00:17 INFO  MemoryStore:60 - Block broadcast_3 stored as values in memory (estimated size 312.0 B, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece0 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece1 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece2 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece2 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece3 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece3 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece4 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece4 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece5 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece5 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece6 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece6 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece7 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece7 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece8 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece8 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_3_piece9 stored as bytes in memory (estimated size 552.5 KiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_3_piece9 in memory on 10.32.147.128:41585 (size: 552.5 KiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  DAGScheduler:60 - Got job 2 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) with 1 output partitions
+2025-09-08 23:00:18 INFO  DAGScheduler:60 - Final stage: ResultStage 4 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369)
+2025-09-08 23:00:18 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 3)
+2025-09-08 23:00:18 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:18 INFO  DAGScheduler:60 - Submitting ResultStage 4 (PythonRDD[8] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369), which has no missing parents
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_4 stored as values in memory (estimated size 8.3 KiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  MemoryStore:60 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 4.1 GiB)
+2025-09-08 23:00:18 INFO  BlockManagerInfo:60 - Added broadcast_4_piece0 in memory on 10.32.147.128:41585 (size: 4.8 KiB, free: 4.1 GiB)
+2025-09-08 23:00:18 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 4 (PythonRDD[8] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:18 INFO  TaskSchedulerImpl:60 - Adding task set 4.0 with 1 tasks resource profile 0
+2025-09-08 23:00:18 INFO  TaskSetManager:60 - Starting task 0.0 in stage 4.0 (TID 41) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:18 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 4.
+2025-09-08 23:00:18 INFO  Executor:60 - Running task 0.0 in stage 4.0 (TID 41)
+2025-09-08 23:00:18 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:18 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:23 INFO  PythonRunner:60 - Times: total = 5040, boot = -1081, init = 2368, finish = 3753
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block taskresult_41 stored as bytes in memory (estimated size 3.4 MiB, free 4.1 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added taskresult_41 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.1 GiB)
+2025-09-08 23:00:23 INFO  Executor:60 - Finished task 0.0 in stage 4.0 (TID 41). 3551097 bytes result sent via BlockManager)
+2025-09-08 23:00:23 INFO  TransportClientFactory:306 - Successfully created connection to /10.32.147.128:41585 after 12 ms (0 ms spent in bootstraps)
+2025-09-08 23:00:23 INFO  TaskSetManager:60 - Finished task 0.0 in stage 4.0 (TID 41) in 5131 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:23 INFO  TaskSchedulerImpl:60 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Removed taskresult_41 on 10.32.147.128:41585 in memory (size: 3.4 MiB, free: 4.1 GiB)
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - ResultStage 4 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) finished in 5.136 s
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:23 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 4: Stage finished
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - Job 2 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369, took 5.138610 s
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_5 stored as values in memory (estimated size 312.0 B, free 4.1 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 3.4 MiB, free 4.1 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_5_piece0 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.1 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6 stored as values in memory (estimated size 312.0 B, free 4.1 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece0 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece1 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece2 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece2 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece3 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece3 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece4 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece4 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece5 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece5 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece6 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece6 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece7 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece7 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece8 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece8 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_6_piece9 stored as bytes in memory (estimated size 552.4 KiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_6_piece9 in memory on 10.32.147.128:41585 (size: 552.4 KiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - Got job 3 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) with 1 output partitions
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - Final stage: ResultStage 6 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612)
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 5)
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - Submitting ResultStage 6 (PythonRDD[9] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612), which has no missing parents
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_7 stored as values in memory (estimated size 8.4 KiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  MemoryStore:60 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 4.0 GiB)
+2025-09-08 23:00:23 INFO  BlockManagerInfo:60 - Added broadcast_7_piece0 in memory on 10.32.147.128:41585 (size: 4.8 KiB, free: 4.0 GiB)
+2025-09-08 23:00:23 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 6 (PythonRDD[9] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:23 INFO  TaskSchedulerImpl:60 - Adding task set 6.0 with 1 tasks resource profile 0
+2025-09-08 23:00:23 INFO  TaskSetManager:60 - Starting task 0.0 in stage 6.0 (TID 42) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:23 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 6.
+2025-09-08 23:00:23 INFO  Executor:60 - Running task 0.0 in stage 6.0 (TID 42)
+2025-09-08 23:00:23 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:23 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:25 INFO  PythonRunner:60 - Times: total = 1918, boot = -6829, init = 8121, finish = 626
+2025-09-08 23:00:25 INFO  Executor:60 - Finished task 0.0 in stage 6.0 (TID 42). 2434 bytes result sent to driver
+2025-09-08 23:00:25 INFO  TaskSetManager:60 - Finished task 0.0 in stage 6.0 (TID 42) in 1957 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:25 INFO  TaskSchedulerImpl:60 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - ResultStage 6 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) finished in 1.961 s
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:25 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 6: Stage finished
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - Job 3 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612, took 1.964143 s
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - Got job 4 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) with 1 output partitions
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - Final stage: ResultStage 8 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201)
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 7)
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - Submitting ResultStage 8 (PythonRDD[10] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201), which has no missing parents
+2025-09-08 23:00:25 INFO  MemoryStore:60 - Block broadcast_8 stored as values in memory (estimated size 8.6 KiB, free 4.0 GiB)
+2025-09-08 23:00:25 INFO  MemoryStore:60 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 4.0 GiB)
+2025-09-08 23:00:25 INFO  BlockManagerInfo:60 - Added broadcast_8_piece0 in memory on 10.32.147.128:41585 (size: 5.1 KiB, free: 4.0 GiB)
+2025-09-08 23:00:25 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 8 (PythonRDD[10] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:25 INFO  TaskSchedulerImpl:60 - Adding task set 8.0 with 1 tasks resource profile 0
+2025-09-08 23:00:25 INFO  TaskSetManager:60 - Starting task 0.0 in stage 8.0 (TID 43) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:25 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 8.
+2025-09-08 23:00:25 INFO  Executor:60 - Running task 0.0 in stage 8.0 (TID 43)
+2025-09-08 23:00:25 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:25 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:26 INFO  PythonRunner:60 - Times: total = 305, boot = -8800, init = 9105, finish = 0
+2025-09-08 23:00:26 INFO  Executor:60 - Finished task 0.0 in stage 8.0 (TID 43). 2074 bytes result sent to driver
+2025-09-08 23:00:26 INFO  TaskSetManager:60 - Finished task 0.0 in stage 8.0 (TID 43) in 309 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:26 INFO  TaskSchedulerImpl:60 - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - ResultStage 8 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) finished in 0.313 s
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:26 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 8: Stage finished
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - Job 4 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201, took 0.315865 s
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_9 stored as values in memory (estimated size 312.0 B, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 3.4 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_9_piece0 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10 stored as values in memory (estimated size 312.0 B, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece0 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece1 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece2 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece2 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece3 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece3 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece4 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece4 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece5 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece5 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece6 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece6 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece7 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece7 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece8 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece8 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_10_piece9 stored as bytes in memory (estimated size 553.0 KiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_10_piece9 in memory on 10.32.147.128:41585 (size: 553.0 KiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - Got job 5 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) with 1 output partitions
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - Final stage: ResultStage 10 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369)
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 9)
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - Submitting ResultStage 10 (PythonRDD[11] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369), which has no missing parents
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_11 stored as values in memory (estimated size 8.4 KiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  MemoryStore:60 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 4.0 GiB)
+2025-09-08 23:00:26 INFO  BlockManagerInfo:60 - Added broadcast_11_piece0 in memory on 10.32.147.128:41585 (size: 4.8 KiB, free: 4.0 GiB)
+2025-09-08 23:00:26 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 10 (PythonRDD[11] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:26 INFO  TaskSchedulerImpl:60 - Adding task set 10.0 with 1 tasks resource profile 0
+2025-09-08 23:00:26 INFO  TaskSetManager:60 - Starting task 0.0 in stage 10.0 (TID 44) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:26 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 10.
+2025-09-08 23:00:26 INFO  Executor:60 - Running task 0.0 in stage 10.0 (TID 44)
+2025-09-08 23:00:26 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:26 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:32 INFO  PythonRunner:60 - Times: total = 5503, boot = -9661, init = 10983, finish = 4181
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block taskresult_44 stored as bytes in memory (estimated size 3.4 MiB, free 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added taskresult_44 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  Executor:60 - Finished task 0.0 in stage 10.0 (TID 44). 3551097 bytes result sent via BlockManager)
+2025-09-08 23:00:32 INFO  TaskSetManager:60 - Finished task 0.0 in stage 10.0 (TID 44) in 5548 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:32 INFO  TaskSchedulerImpl:60 - Removed TaskSet 10.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - ResultStage 10 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) finished in 5.552 s
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed taskresult_44 on 10.32.147.128:41585 in memory (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:32 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 10: Stage finished
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - Job 5 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369, took 5.554057 s
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_12 stored as values in memory (estimated size 312.0 B, free 4.0 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 3.4 MiB, free 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_12_piece0 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13 stored as values in memory (estimated size 312.0 B, free 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_2_piece0 on 10.32.147.128:41585 in memory (size: 5.1 KiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_5_piece0 on 10.32.147.128:41585 in memory (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_7_piece0 on 10.32.147.128:41585 in memory (size: 4.8 KiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece4 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece2 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece5 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece8 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece7 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece9 on 10.32.147.128:41585 in memory (size: 552.4 KiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece6 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece0 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece1 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_6_piece3 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_9_piece0 on 10.32.147.128:41585 in memory (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece0 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece4 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece7 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece6 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece8 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece2 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece1 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece9 on 10.32.147.128:41585 in memory (size: 553.0 KiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece3 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_10_piece5 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_8_piece0 on 10.32.147.128:41585 in memory (size: 5.1 KiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_4_piece0 on 10.32.147.128:41585 in memory (size: 4.8 KiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece1 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece6 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece5 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece2 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece7 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece0 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece9 on 10.32.147.128:41585 in memory (size: 552.5 KiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece8 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece3 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_3_piece4 on 10.32.147.128:41585 in memory (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Removed broadcast_11_piece0 on 10.32.147.128:41585 in memory (size: 4.8 KiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece0 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece1 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece2 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece2 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece3 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece3 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece4 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece4 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece5 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece5 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece6 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece6 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece7 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece7 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece8 stored as bytes in memory (estimated size 4.0 MiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece8 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_13_piece9 stored as bytes in memory (estimated size 552.4 KiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_13_piece9 in memory on 10.32.147.128:41585 (size: 552.4 KiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - Got job 6 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) with 1 output partitions
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - Final stage: ResultStage 12 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612)
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 11)
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - Submitting ResultStage 12 (PythonRDD[12] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612), which has no missing parents
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_14 stored as values in memory (estimated size 8.4 KiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  MemoryStore:60 - Block broadcast_14_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 4.1 GiB)
+2025-09-08 23:00:32 INFO  BlockManagerInfo:60 - Added broadcast_14_piece0 in memory on 10.32.147.128:41585 (size: 4.8 KiB, free: 4.1 GiB)
+2025-09-08 23:00:32 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 12 (PythonRDD[12] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:32 INFO  TaskSchedulerImpl:60 - Adding task set 12.0 with 1 tasks resource profile 0
+2025-09-08 23:00:32 INFO  TaskSetManager:60 - Starting task 0.0 in stage 12.0 (TID 45) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:32 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 12.
+2025-09-08 23:00:32 INFO  Executor:60 - Running task 0.0 in stage 12.0 (TID 45)
+2025-09-08 23:00:32 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:32 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:34 INFO  PythonRunner:60 - Times: total = 1961, boot = -15791, init = 17123, finish = 629
+2025-09-08 23:00:34 INFO  Executor:60 - Finished task 0.0 in stage 12.0 (TID 45). 2434 bytes result sent to driver
+2025-09-08 23:00:34 INFO  TaskSetManager:60 - Finished task 0.0 in stage 12.0 (TID 45) in 1992 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:34 INFO  TaskSchedulerImpl:60 - Removed TaskSet 12.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - ResultStage 12 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) finished in 1.995 s
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:34 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 12: Stage finished
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - Job 6 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612, took 1.996964 s
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - Got job 7 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) with 1 output partitions
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - Final stage: ResultStage 14 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201)
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 13)
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - Submitting ResultStage 14 (PythonRDD[13] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201), which has no missing parents
+2025-09-08 23:00:34 INFO  MemoryStore:60 - Block broadcast_15 stored as values in memory (estimated size 8.6 KiB, free 4.1 GiB)
+2025-09-08 23:00:34 INFO  MemoryStore:60 - Block broadcast_15_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 4.1 GiB)
+2025-09-08 23:00:34 INFO  BlockManagerInfo:60 - Added broadcast_15_piece0 in memory on 10.32.147.128:41585 (size: 5.1 KiB, free: 4.1 GiB)
+2025-09-08 23:00:34 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 14 (PythonRDD[13] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:34 INFO  TaskSchedulerImpl:60 - Adding task set 14.0 with 1 tasks resource profile 0
+2025-09-08 23:00:34 INFO  TaskSetManager:60 - Starting task 0.0 in stage 14.0 (TID 46) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:34 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 14.
+2025-09-08 23:00:34 INFO  Executor:60 - Running task 0.0 in stage 14.0 (TID 46)
+2025-09-08 23:00:34 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:34 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:35 INFO  PythonRunner:60 - Times: total = 283, boot = -17798, init = 18080, finish = 1
+2025-09-08 23:00:35 INFO  Executor:60 - Finished task 0.0 in stage 14.0 (TID 46). 2031 bytes result sent to driver
+2025-09-08 23:00:35 INFO  TaskSetManager:60 - Finished task 0.0 in stage 14.0 (TID 46) in 286 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:35 INFO  TaskSchedulerImpl:60 - Removed TaskSet 14.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - ResultStage 14 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) finished in 0.288 s
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:35 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 14: Stage finished
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - Job 7 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201, took 0.290385 s
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_16 stored as values in memory (estimated size 312.0 B, free 4.1 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_16_piece0 stored as bytes in memory (estimated size 3.4 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_16_piece0 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17 stored as values in memory (estimated size 312.0 B, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece0 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece1 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece2 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece2 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece3 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece3 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece4 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece4 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece5 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece5 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece6 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece6 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece7 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece7 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece8 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece8 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_17_piece9 stored as bytes in memory (estimated size 553.0 KiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_17_piece9 in memory on 10.32.147.128:41585 (size: 553.0 KiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - Got job 8 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) with 1 output partitions
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - Final stage: ResultStage 16 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369)
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 15)
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - Submitting ResultStage 16 (PythonRDD[14] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369), which has no missing parents
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_18 stored as values in memory (estimated size 8.4 KiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  MemoryStore:60 - Block broadcast_18_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 4.0 GiB)
+2025-09-08 23:00:35 INFO  BlockManagerInfo:60 - Added broadcast_18_piece0 in memory on 10.32.147.128:41585 (size: 4.8 KiB, free: 4.0 GiB)
+2025-09-08 23:00:35 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 16 (PythonRDD[14] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:35 INFO  TaskSchedulerImpl:60 - Adding task set 16.0 with 1 tasks resource profile 0
+2025-09-08 23:00:35 INFO  TaskSetManager:60 - Starting task 0.0 in stage 16.0 (TID 47) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:35 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 16.
+2025-09-08 23:00:35 INFO  Executor:60 - Running task 0.0 in stage 16.0 (TID 47)
+2025-09-08 23:00:35 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:35 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:40 INFO  PythonRunner:60 - Times: total = 5035, boot = -18626, init = 19933, finish = 3728
+2025-09-08 23:00:40 INFO  MemoryStore:60 - Block taskresult_47 stored as bytes in memory (estimated size 3.4 MiB, free 4.0 GiB)
+2025-09-08 23:00:40 INFO  BlockManagerInfo:60 - Added taskresult_47 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:40 INFO  Executor:60 - Finished task 0.0 in stage 16.0 (TID 47). 3551140 bytes result sent via BlockManager)
+2025-09-08 23:00:40 INFO  TaskSetManager:60 - Finished task 0.0 in stage 16.0 (TID 47) in 5085 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:40 INFO  TaskSchedulerImpl:60 - Removed TaskSet 16.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:40 INFO  BlockManagerInfo:60 - Removed taskresult_47 on 10.32.147.128:41585 in memory (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:40 INFO  DAGScheduler:60 - ResultStage 16 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369) finished in 5.089 s
+2025-09-08 23:00:40 INFO  DAGScheduler:60 - Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:40 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 16: Stage finished
+2025-09-08 23:00:40 INFO  DAGScheduler:60 - Job 8 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:369, took 5.091279 s
+2025-09-08 23:00:40 INFO  MemoryStore:60 - Block broadcast_19 stored as values in memory (estimated size 312.0 B, free 4.0 GiB)
+2025-09-08 23:00:40 INFO  MemoryStore:60 - Block broadcast_19_piece0 stored as bytes in memory (estimated size 3.4 MiB, free 4.0 GiB)
+2025-09-08 23:00:40 INFO  BlockManagerInfo:60 - Added broadcast_19_piece0 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20 stored as values in memory (estimated size 312.0 B, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece0 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece1 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece2 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece2 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece3 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece3 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece4 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece4 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece5 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece5 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece6 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece6 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece7 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece7 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece8 stored as bytes in memory (estimated size 4.0 MiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece8 in memory on 10.32.147.128:41585 (size: 4.0 MiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_20_piece9 stored as bytes in memory (estimated size 552.4 KiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_20_piece9 in memory on 10.32.147.128:41585 (size: 552.4 KiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  DAGScheduler:60 - Got job 9 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) with 1 output partitions
+2025-09-08 23:00:41 INFO  DAGScheduler:60 - Final stage: ResultStage 18 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612)
+2025-09-08 23:00:41 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 17)
+2025-09-08 23:00:41 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:41 INFO  DAGScheduler:60 - Submitting ResultStage 18 (PythonRDD[15] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612), which has no missing parents
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_21 stored as values in memory (estimated size 8.4 KiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  MemoryStore:60 - Block broadcast_21_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 4.0 GiB)
+2025-09-08 23:00:41 INFO  BlockManagerInfo:60 - Added broadcast_21_piece0 in memory on 10.32.147.128:41585 (size: 4.8 KiB, free: 4.0 GiB)
+2025-09-08 23:00:41 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 18 (PythonRDD[15] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:41 INFO  TaskSchedulerImpl:60 - Adding task set 18.0 with 1 tasks resource profile 0
+2025-09-08 23:00:41 INFO  TaskSetManager:60 - Starting task 0.0 in stage 18.0 (TID 48) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:41 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 18.
+2025-09-08 23:00:41 INFO  Executor:60 - Running task 0.0 in stage 18.0 (TID 48)
+2025-09-08 23:00:41 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:41 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:43 INFO  PythonRunner:60 - Times: total = 1890, boot = 1, init = 1332, finish = 557
+2025-09-08 23:00:43 INFO  Executor:60 - Finished task 0.0 in stage 18.0 (TID 48). 2434 bytes result sent to driver
+2025-09-08 23:00:43 INFO  TaskSetManager:60 - Finished task 0.0 in stage 18.0 (TID 48) in 1922 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:43 INFO  TaskSchedulerImpl:60 - Removed TaskSet 18.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - ResultStage 18 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612) finished in 1.924 s
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:43 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 18: Stage finished
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Job 9 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:612, took 1.925440 s
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Got job 10 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) with 1 output partitions
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Final stage: ResultStage 20 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201)
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Parents of final stage: List(ShuffleMapStage 19)
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Missing parents: List()
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Submitting ResultStage 20 (PythonRDD[16] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201), which has no missing parents
+2025-09-08 23:00:43 INFO  MemoryStore:60 - Block broadcast_22 stored as values in memory (estimated size 8.6 KiB, free 4.0 GiB)
+2025-09-08 23:00:43 INFO  MemoryStore:60 - Block broadcast_22_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 4.0 GiB)
+2025-09-08 23:00:43 INFO  BlockManagerInfo:60 - Added broadcast_22_piece0 in memory on 10.32.147.128:41585 (size: 5.1 KiB, free: 4.0 GiB)
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Submitting 1 missing tasks from ResultStage 20 (PythonRDD[16] at collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) (first 15 tasks are for partitions Vector(0))
+2025-09-08 23:00:43 INFO  TaskSchedulerImpl:60 - Adding task set 20.0 with 1 tasks resource profile 0
+2025-09-08 23:00:43 INFO  TaskSetManager:60 - Starting task 0.0 in stage 20.0 (TID 49) (10.32.147.128, executor driver, partition 0, PROCESS_LOCAL, 7457 bytes) 
+2025-09-08 23:00:43 INFO  TaskSchedulerImpl:60 - Successfully scheduled all the 1 tasks for barrier stage 20.
+2025-09-08 23:00:43 INFO  Executor:60 - Running task 0.0 in stage 20.0 (TID 49)
+2025-09-08 23:00:43 INFO  ShuffleBlockFetcherIterator:60 - Getting 32 (2.1 KiB) non-empty blocks including 32 (2.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-09-08 23:00:43 INFO  ShuffleBlockFetcherIterator:60 - Started 0 remote fetches in 0 ms
+2025-09-08 23:00:43 INFO  PythonRunner:60 - Times: total = 287, boot = 1, init = 286, finish = 0
+2025-09-08 23:00:43 INFO  Executor:60 - Finished task 0.0 in stage 20.0 (TID 49). 2031 bytes result sent to driver
+2025-09-08 23:00:43 INFO  TaskSetManager:60 - Finished task 0.0 in stage 20.0 (TID 49) in 291 ms on 10.32.147.128 (executor driver) (1/1)
+2025-09-08 23:00:43 INFO  TaskSchedulerImpl:60 - Removed TaskSet 20.0, whose tasks have all completed, from pool 
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - ResultStage 20 (collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201) finished in 0.295 s
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-09-08 23:00:43 INFO  TaskSchedulerImpl:60 - Killing all running tasks in stage 20: Stage finished
+2025-09-08 23:00:43 INFO  DAGScheduler:60 - Job 10 finished: collect at /home/demo1/anaconda/envs/big/lib/python3.9/site-packages/bigdl/orca/learn/pytorch/pytorch_pyspark_estimator.py:201, took 0.295811 s
+2025-09-08 23:00:43 INFO  MemoryStore:60 - Block broadcast_23 stored as values in memory (estimated size 312.0 B, free 4.0 GiB)
+2025-09-08 23:00:43 INFO  MemoryStore:60 - Block broadcast_23_piece0 stored as bytes in memory (estimated size 3.4 MiB, free 4.0 GiB)
+2025-09-08 23:00:43 INFO  BlockManagerInfo:60 - Added broadcast_23_piece0 in memory on 10.32.147.128:41585 (size: 3.4 MiB, free: 4.0 GiB)
+2025-09-08 23:00:43 INFO  AbstractConnector:383 - Stopped Spark@2eeecedd{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-09-08 23:00:43 INFO  SparkUI:60 - Stopped Spark web UI at http://10.32.147.128:4040
+2025-09-08 23:00:43 INFO  MapOutputTrackerMasterEndpoint:60 - MapOutputTrackerMasterEndpoint stopped!
+2025-09-08 23:00:43 INFO  MemoryStore:60 - MemoryStore cleared
+2025-09-08 23:00:43 INFO  BlockManager:60 - BlockManager stopped
+2025-09-08 23:00:43 INFO  BlockManagerMaster:60 - BlockManagerMaster stopped
+2025-09-08 23:00:43 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:60 - OutputCommitCoordinator stopped!
+2025-09-08 23:00:44 INFO  ShutdownHookManager:60 - Shutdown hook called
+2025-09-08 23:00:44 INFO  ShutdownHookManager:60 - Deleting directory /tmp/spark-ae3db2ab-eab1-4fce-964e-e2c230498a2f
+2025-09-08 23:00:44 INFO  ShutdownHookManager:60 - Deleting directory /tmp/spark-418730cb-fc31-433c-a2f6-df164c9f4290
+2025-09-08 23:00:44 INFO  ShutdownHookManager:60 - Deleting directory /tmp/spark-ae3db2ab-eab1-4fce-964e-e2c230498a2f/pyspark-df14b59b-7772-4a39-ae5e-65cd834e88ec
