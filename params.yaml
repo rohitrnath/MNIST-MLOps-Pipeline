@@ -5,12 +5,13 @@ mnist:
   chunk_size: 2048
   normalize_mean: 0.1307
   normalize_std: 0.3081
-  batch_size: 64
-  epochs: 3
+  batch_size: 128
+  epochs: 15
   seed: 42
 train:
-  lr: 0.001
-  optimizer: adam
+  model_name: "LRNet"
+  lr: 0.01
+  optimizer: sgd
   momentum: 0.9
   weight_decay: 0.0
   scheduler: none

@@ -193,6 +193,7 @@ tomli==2.2.1
 tomlkit==0.13.3
 torch==2.8.0
 torchvision==0.23.0
+torchinfo
 tqdm==4.67.1
 triton==3.4.0
 typer==0.17.3

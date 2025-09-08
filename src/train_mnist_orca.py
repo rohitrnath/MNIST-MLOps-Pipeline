@@ -7,6 +7,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
+from torchinfo import summary
 from bigdl.orca import init_orca_context, stop_orca_context
 from bigdl.orca.learn.pytorch import Estimator
 from bigdl.orca.learn.metrics import Accuracy
@@ -69,7 +70,7 @@ def test_loader_creator(config, batch_size):
 
 
 def model_creator(config):
-	return LeNet(fc1_hidden_size=config["fc1_hidden_size"])
+	return LeNet(fc1_hidden_size=512)
 
 
 def optimizer_creator(model, config):
@@ -141,6 +142,7 @@ def main():
 		"scheduler": str(train_section.get("scheduler", "none")).lower(),
 		"step_size": int(train_section.get("step_size", 10)),
 		"gamma": float(train_section.get("gamma", 0.1)),
+		"model_name": str(train_section.get("model_name", "Net"))
 	}
 
 	# Prefer Orca-bundled Spark; unset external SPARK_HOME if set
@@ -185,7 +187,7 @@ def main():
 				"scheduler": train_cfg["scheduler"],
 				"step_size": train_cfg["step_size"],
 				"gamma": train_cfg["gamma"],
-				"fc1_hidden_size": 512,
+				"model name": train_cfg["model_name"],
 				"train_dataset": train_ds,
 				"test_dataset": test_ds,
 			},
@@ -238,7 +240,7 @@ def main():
 			if best_metric is None or acc > best_metric:
 				best_metric = acc
 				best_run_id = run.info.run_id
-				best_cfg = {"lr": train_cfg["lr"], "fc1_hidden_size": 512}
+				best_cfg = {"lr": train_cfg["lr"], "model_name": train_cfg["model_name"]}
 
 		# Save estimator checkpoint and extract model weights
 		ckpt_path = os.path.join("artifacts", f"mnist_ckpt_{int(time.time())}.pt")
@@ -253,6 +255,8 @@ def main():
 		# Record a tag and tiny marker to help the registrar find it
 		mlflow.set_tag("logged_model_artifact", "model")
 		open("model_marker.txt", "w", encoding="utf-8").write("model artifact logged")
+		with open("model_marker.txt", "w") as f:
+			f.write(str(summary(model, input_size=(1, 1, 28, 28))))
 		mlflow.log_artifact("model_marker.txt")
 
 		est.shutdown()
