@@ -39,6 +39,15 @@ async def startup_event():
 	if os.path.isdir("static"):
 		app.mount("/static", StaticFiles(directory="static"), name="static")
 
+
+@app.get("/")
+async def root_index():
+	index_path = os.path.join("static/", "index.html")
+	if os.path.exists(index_path):
+		return FileResponse(index_path)
+	return {"message": "MNIST API. POST /predict with image list."}
+
+
 @app.post("/predict")
 async def predict(req: PredictRequest):
 	arr = np.array(req.image, dtype=np.float32)
