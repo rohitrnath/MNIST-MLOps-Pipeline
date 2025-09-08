@@ -1,0 +1,20 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess_mnist_spark.py --params params.yaml
+    deps:
+      - src/preprocess_mnist_spark.py
+      - params.yaml
+    outs:
+      - data/mnist/train.parquet
+      - data/mnist/test.parquet
+      - data/mnist/baseline_distribution.json
+  training:
+    cmd: python src/train_mnist_orca.py --params params.yaml
+    deps:
+      - src/train_mnist_orca.py
+      - params.yaml
+      - data/mnist/train.parquet
+      - data/mnist/test.parquet
+    outs:
+      - artifacts
+      - mlruns
