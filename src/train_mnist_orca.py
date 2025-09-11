@@ -16,28 +16,102 @@ import mlflow
 import mlflow.pytorch as mlflow_pytorch
 
 
-class LeNet(nn.Module):
-	def __init__(self, fc1_hidden_size: int = 500):
-		super().__init__()
-		self.conv1 = nn.Conv2d(1, 20, 5, 1)
-		self.conv2 = nn.Conv2d(20, 50, 5, 1)
-		self.fc1 = nn.Linear(4 * 4 * 50, fc1_hidden_size)
-		self.fc2 = nn.Linear(fc1_hidden_size, 10)
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        # Input Block
+        self.convblock1 = nn.Sequential(
+            nn.Conv2d(in_channels=1, out_channels=32, kernel_size=(3, 3), padding=0, bias=False),
+            nn.ReLU()
+        ) # output_size = 26
 
-	def forward(self, x):
-		x = F.relu(self.conv1(x))
-		x = F.max_pool2d(x, 2, 2)
-		x = F.relu(self.conv2(x))
-		x = F.max_pool2d(x, 2, 2)
-		x = x.view(-1, 4 * 4 * 50)
-		x = F.relu(self.fc1(x))
-		x = self.fc2(x)
-		return F.log_softmax(x, dim=1)
+        # CONVOLUTION BLOCK 1
+        self.convblock2 = nn.Sequential(
+            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=(3, 3), padding=0, bias=False),
+            nn.ReLU()
+        ) # output_size = 24
+        self.convblock3 = nn.Sequential(
+            nn.Conv2d(in_channels=64, out_channels=128, kernel_size=(3, 3), padding=0, bias=False),
+            nn.ReLU()
+        ) # output_size = 22
+
+        # TRANSITION BLOCK 1
+        self.pool1 = nn.MaxPool2d(2, 2) # output_size = 11
+        self.convblock4 = nn.Sequential(
+            nn.Conv2d(in_channels=128, out_channels=32, kernel_size=(1, 1), padding=0, bias=False),
+            nn.ReLU()
+        ) # output_size = 11
+
+        # CONVOLUTION BLOCK 2
+        self.convblock5 = nn.Sequential(
+            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=(3, 3), padding=0, bias=False),
+            nn.ReLU()
+        ) # output_size = 9
+        self.convblock6 = nn.Sequential(
+            nn.Conv2d(in_channels=64, out_channels=128, kernel_size=(3, 3), padding=0, bias=False),
+            nn.ReLU()
+        ) # output_size = 7
+
+        # OUTPUT BLOCK
+        self.convblock7 = nn.Sequential(
+            nn.Conv2d(in_channels=128, out_channels=10, kernel_size=(1, 1), padding=0, bias=False),
+            nn.ReLU()
+        ) # output_size = 7
+        self.convblock8 = nn.Sequential(
+            nn.Conv2d(in_channels=10, out_channels=10, kernel_size=(7, 7), padding=0, bias=False),
+            # nn.ReLU() NEVER!
+        ) # output_size = 1 7x7x10 | 7x7x10x10 | 1x1x10
+
+    def forward(self, x):
+        x = self.convblock1(x)
+        x = self.convblock2(x)
+        x = self.convblock3(x)
+        x = self.pool1(x)
+        x = self.convblock4(x)
+        x = self.convblock5(x)
+        x = self.convblock6(x)
+        x = self.convblock7(x)
+        x = self.convblock8(x)
+        x = x.view(-1, 10)
+        return F.log_softmax(x, dim=-1)
 
 
 def load_params(params_path: str) -> dict:
 	with open(params_path, "r", encoding="utf-8") as f:
 		return yaml.safe_load(f)
+
+
+def _normalize_metric_name(name: str) -> str:
+	return "".join(c.lower() if c.isalnum() else "_" for c in str(name)).strip("_")
+
+
+def _log_mlflow_metrics(prefix: str, stats: dict, step: int) -> None:
+	if not isinstance(stats, dict):
+		return
+	for k, v in stats.items():
+		try:
+			val = float(v)
+		except (TypeError, ValueError):
+			continue
+		mlflow.log_metric(f"{prefix}_{_normalize_metric_name(k)}", val, step=step)
+
+
+def _get_accuracy(stats: dict) -> float:
+	if not isinstance(stats, dict):
+		return 0.0
+	for key in [
+		"Accuracy",
+		"accuracy",
+		"acc",
+		"top1accuracy",
+		"top1_accuracy",
+	]:
+		if key in stats:
+			try:
+				return float(stats[key])
+			except (TypeError, ValueError):
+				pass
+	return 0.0
 
 
 class ParquetMNIST(Dataset):
@@ -70,7 +144,7 @@ def test_loader_creator(config, batch_size):
 
 
 def model_creator(config):
-	return LeNet(fc1_hidden_size=512)
+	return Net()
 
 
 def optimizer_creator(model, config):
@@ -214,29 +288,15 @@ def main():
 		best_metric = None
 		for epoch in range(int(mn["epochs"])):
 			train_stats = est.fit(data=train_loader_creator, epochs=1, batch_size=mn["batch_size"])
-			# Attempt to parse training stats
-			if isinstance(train_stats, list):
-				# list of dicts per epoch
-				stat = train_stats[-1]
-				if isinstance(stat, dict):
-					if "loss" in stat:
-						mlflow.log_metric("train_loss", float(stat["loss"]), step=epoch + 1)
-					if "Accuracy" in stat:
-						mlflow.log_metric("train_accuracy", float(stat["Accuracy"]), step=epoch + 1)
-			elif isinstance(train_stats, dict):
-				if "loss" in train_stats:
-					mlflow.log_metric("train_loss", float(train_stats["loss"]), step=epoch + 1)
-				if "Accuracy" in train_stats:
-					mlflow.log_metric("train_accuracy", float(train_stats["Accuracy"]), step=epoch + 1)
+			# Log all numeric training metrics for this epoch
+			train_last = train_stats[-1] if isinstance(train_stats, list) else train_stats
+			_log_mlflow_metrics("train", train_last, step=epoch + 1)
 
 			eval_stats = est.evaluate(data=test_loader_creator, batch_size=mn["batch_size"])
-			if isinstance(eval_stats, dict):
-				if "Accuracy" in eval_stats:
-					mlflow.log_metric("test_accuracy", float(eval_stats["Accuracy"]), step=epoch + 1)
-				if "loss" in eval_stats:
-					mlflow.log_metric("test_loss", float(eval_stats["loss"]), step=epoch + 1)
+			# Log all numeric evaluation metrics
+			_log_mlflow_metrics("test", eval_stats, step=epoch + 1)
 
-			acc = float(eval_stats.get("Accuracy", 0.0)) if isinstance(eval_stats, dict) else 0.0
+			acc = _get_accuracy(eval_stats)
 			if best_metric is None or acc > best_metric:
 				best_metric = acc
 				best_run_id = run.info.run_id
@@ -247,7 +307,7 @@ def main():
 		est.save(ckpt_path)
 		ckpt = torch.load(ckpt_path, map_location="cpu")
 		state = _extract_state_dict(ckpt)
-		model = LeNet(fc1_hidden_size=512)
+		model = Net()
 		model.load_state_dict(state)
 		model.eval()
 		# Log as MLflow PyTorch Model under 'model'
