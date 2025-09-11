@@ -9,16 +9,16 @@ mnist:
   epochs: 15
   seed: 42
 train:
-  model_name: "Increase the capacity"
+  model_name: "Correct max-pooling location"
   lr: 0.01
   optimizer: sgd
   momentum: 0.9
   weight_decay: 0.0
-  scheduler: none
-  step_size: 10
+  scheduler: step
+  step_size: 5
   gamma: 0.1
 mlflow:
-  run_description: "Increase the capacity of model after GAP"
+  run_description: "Add layer after GAP, Perform MaxPooling at RF=5, Fix DropOut, add it to each layer"
   experiment_name: mnist-orca
   tracking_uri: file:./mlruns
   registered_model_name: mnist-classifier
