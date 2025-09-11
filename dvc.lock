@@ -5,8 +5,8 @@ stages:
     deps:
     - path: params.yaml
       hash: md5
-      md5: 896d1c7a6c035bde6964d4da3ae2acfa
-      size: 790
+      md5: a068975bd69857549c4ba6f6ba7fa879
+      size: 819
     - path: src/preprocess_mnist_spark.py
       hash: md5
       md5: 0686ca87944e0c96a02d14573928b603
@@ -41,20 +41,20 @@ stages:
       nfiles: 482
     - path: params.yaml
       hash: md5
-      md5: 896d1c7a6c035bde6964d4da3ae2acfa
-      size: 790
+      md5: a068975bd69857549c4ba6f6ba7fa879
+      size: 819
     - path: src/train_mnist_orca.py
       hash: md5
-      md5: f3878829a39dc75b37240577730979fa
-      size: 11438
+      md5: edbf254cf1b27697f8fc83baccd84c85
+      size: 11539
     outs:
     - path: artifacts
       hash: md5
-      md5: 4d5c3b3ffa35caebb6ff91c77cfc2dc0.dir
-      size: 17664988
-      nfiles: 7
+      md5: 21f3492069b419d5efece495ad264923.dir
+      size: 17773598
+      nfiles: 8
     - path: mlruns
       hash: md5
-      md5: f03e92956e73ecbcec284e2b4c407f73.dir
-      size: 8055478
-      nfiles: 579
+      md5: 48f213d406a0197bd40f78c28a4cbe1b.dir
+      size: 8133139
+      nfiles: 635
