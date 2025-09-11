@@ -9,7 +9,7 @@ mnist:
   epochs: 15
   seed: 42
 train:
-  model_name: "Light Wight Model"
+  model_name: "With Batchnorm"
   lr: 0.01
   optimizer: sgd
   momentum: 0.9
@@ -18,7 +18,7 @@ train:
   step_size: 10
   gamma: 0.1
 mlflow:
-  run_description: "Light Weight Model"
+  run_description: "Enable batch normalization"
   experiment_name: mnist-orca
   tracking_uri: file:./mlruns
   registered_model_name: mnist-classifier
