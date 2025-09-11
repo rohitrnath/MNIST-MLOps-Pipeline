@@ -9,7 +9,7 @@ mnist:
   epochs: 15
   seed: 42
 train:
-  model_name: "Adding dropout"
+  model_name: "With GAP"
   lr: 0.01
   optimizer: sgd
   momentum: 0.9
@@ -18,7 +18,7 @@ train:
   step_size: 10
   gamma: 0.1
 mlflow:
-  run_description: "ligh-weight model with batch normalization and drop-out"
+  run_description: "ligh-weight model with global average pooling"
   experiment_name: mnist-orca
   tracking_uri: file:./mlruns
   registered_model_name: mnist-classifier
