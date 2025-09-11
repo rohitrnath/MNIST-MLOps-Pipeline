@@ -29,20 +29,22 @@ Net                                      [1, 10]                   --
 │    └─BatchNorm2d: 2-17                 [1, 20, 7, 7]             40
 │    └─ReLU: 2-18                        [1, 20, 7, 7]             --
 ├─Dropout: 1-9                           [1, 20, 7, 7]             --
-├─Sequential: 1-10                       [1, 10, 7, 7]             --
-│    └─Conv2d: 2-19                      [1, 10, 7, 7]             200
-│    └─BatchNorm2d: 2-20                 [1, 10, 7, 7]             20
-│    └─ReLU: 2-21                        [1, 10, 7, 7]             --
-├─Sequential: 1-11                       [1, 10, 1, 1]             --
-│    └─AvgPool2d: 2-22                   [1, 10, 1, 1]             --
+├─Sequential: 1-10                       [1, 32, 5, 5]             --
+│    └─Conv2d: 2-19                      [1, 32, 5, 5]             5,760
+│    └─BatchNorm2d: 2-20                 [1, 32, 5, 5]             64
+│    └─ReLU: 2-21                        [1, 32, 5, 5]             --
+├─Sequential: 1-11                       [1, 10, 5, 5]             --
+│    └─Conv2d: 2-22                      [1, 10, 5, 5]             320
+├─Sequential: 1-12                       [1, 10, 1, 1]             --
+│    └─AvgPool2d: 2-23                   [1, 10, 1, 1]             --
 ==========================================================================================
-Total params: 6,070
-Trainable params: 6,070
+Total params: 11,994
+Trainable params: 11,994
 Non-trainable params: 0
-Total mult-adds (M): 1.65
+Total mult-adds (M): 1.79
 ==========================================================================================
 Input size (MB): 0.00
-Forward/backward pass size (MB): 0.41
-Params size (MB): 0.02
-Estimated Total Size (MB): 0.44
+Forward/backward pass size (MB): 0.42
+Params size (MB): 0.05
+Estimated Total Size (MB): 0.47
 ==========================================================================================
