@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/2c0032a6d40e4217b82b4c30d10352fe/artifacts
+deleted_time: 1757606016414
+end_time: 1757605812458
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: 2c0032a6d40e4217b82b4c30d10352fe
+run_name: unique-roo-615
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757605259563
+status: 4
+tags: []
+user_id: demo1

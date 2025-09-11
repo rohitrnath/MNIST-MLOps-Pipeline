@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/b1605453fa4a4b419f0a110e3e5b762b/artifacts
+end_time: 1757610198714
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: b1605453fa4a4b419f0a110e3e5b762b
+run_name: likeable-zebra-598
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757610198599
+status: 3
+tags: []
+user_id: demo1

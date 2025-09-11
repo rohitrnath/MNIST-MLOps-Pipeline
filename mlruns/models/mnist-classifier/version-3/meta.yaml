@@ -1,0 +1,28 @@
+aliases: []
+creation_timestamp: 1757612446863
+current_stage: Production
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1757612446909
+metrics: []
+model_id: m-aaf83c0cdaa641a39739863726fdfa3f
+name: mnist-classifier
+params:
+  batch_size: '128'
+  epochs: '15'
+  gamma: '0.1'
+  lr: '0.01'
+  momentum: '0.9'
+  optimizer: sgd
+  scheduler: none
+  step_size: '10'
+  weight_decay: '0.0'
+  workers_per_node: '1'
+run_id: 0eac7973439d489da1db237da33d8764
+run_link: null
+source: models:/m-aaf83c0cdaa641a39739863726fdfa3f
+status: READY
+status_message: null
+storage_location: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/models/m-aaf83c0cdaa641a39739863726fdfa3f/artifacts
+user_id: null
+version: 3

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/61a9067bc17948db9d809fa9205b3880/artifacts
+end_time: 1757610198589
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: 61a9067bc17948db9d809fa9205b3880
+run_name: sincere-elk-33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757609957262
+status: 3
+tags: []
+user_id: demo1

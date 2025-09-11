@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/b8e1f3f7a3d44a0eb5ad28f876ae83b3/artifacts
+deleted_time: 1757607473345
+end_time: 1757607371676
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: b8e1f3f7a3d44a0eb5ad28f876ae83b3
+run_name: secretive-moose-907
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757607340244
+status: 4
+tags: []
+user_id: demo1

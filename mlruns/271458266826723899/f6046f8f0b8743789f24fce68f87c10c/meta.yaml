@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/f6046f8f0b8743789f24fce68f87c10c/artifacts
+deleted_time: 1757605396679
+end_time: 1757605224485
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: f6046f8f0b8743789f24fce68f87c10c
+run_name: capricious-worm-432
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757605224413
+status: 4
+tags: []
+user_id: demo1

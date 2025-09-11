@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/ff7d4390492843d5882b14fb7b520c2a/artifacts
+end_time: 1757609797014
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: ff7d4390492843d5882b14fb7b520c2a
+run_name: dazzling-mare-539
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757609795953
+status: 3
+tags: []
+user_id: demo1

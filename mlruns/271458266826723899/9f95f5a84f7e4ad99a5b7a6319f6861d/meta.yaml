@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/9f95f5a84f7e4ad99a5b7a6319f6861d/artifacts
+end_time: 1757609795951
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: 9f95f5a84f7e4ad99a5b7a6319f6861d
+run_name: worried-cat-786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757609562938
+status: 3
+tags: []
+user_id: demo1

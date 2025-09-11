@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/0eac7973439d489da1db237da33d8764/artifacts
+end_time: 1757610699028
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: 0eac7973439d489da1db237da33d8764
+run_name: sincere-zebra-194
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757610356269
+status: 3
+tags: []
+user_id: demo1

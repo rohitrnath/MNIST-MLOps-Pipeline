@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/9e59d9642a1c4612aa262fe7b7c59f67/artifacts
+end_time: 1757608347426
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: 9e59d9642a1c4612aa262fe7b7c59f67
+run_name: beautiful-mouse-667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757608346832
+status: 3
+tags: []
+user_id: demo1

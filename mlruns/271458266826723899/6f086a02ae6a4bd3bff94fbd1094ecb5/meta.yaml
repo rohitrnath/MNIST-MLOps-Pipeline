@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/6f086a02ae6a4bd3bff94fbd1094ecb5/artifacts
+end_time: 1757608720571
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: 6f086a02ae6a4bd3bff94fbd1094ecb5
+run_name: unruly-ox-423
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757608555358
+status: 3
+tags: []
+user_id: demo1

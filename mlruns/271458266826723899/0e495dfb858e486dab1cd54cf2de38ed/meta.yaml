@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/0e495dfb858e486dab1cd54cf2de38ed/artifacts
+end_time: 1757609346829
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: 0e495dfb858e486dab1cd54cf2de38ed
+run_name: glamorous-hen-873
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757609341799
+status: 3
+tags: []
+user_id: demo1

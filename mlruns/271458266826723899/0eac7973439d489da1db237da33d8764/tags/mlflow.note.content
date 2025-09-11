@@ -1,0 +1,1 @@
+Increase model capacity at the end (add layer after GAP), Perform MaxPooling at RF=5, Fix DropOut, add it to each layer

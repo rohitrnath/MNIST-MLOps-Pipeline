@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/ca64ae0b574f48d789bb6e6d123466fc/artifacts
+deleted_time: 1757604651802
+end_time: 1757348875657
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: ca64ae0b574f48d789bb6e6d123466fc
+run_name: abundant-cow-16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757348842888
+status: 3
+tags: []
+user_id: demo1

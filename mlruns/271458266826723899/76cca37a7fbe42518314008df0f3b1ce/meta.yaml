@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/76cca37a7fbe42518314008df0f3b1ce/artifacts
+deleted_time: 1757604650616
+end_time: 1757599616880
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: 76cca37a7fbe42518314008df0f3b1ce
+run_name: intelligent-bird-897
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757599616518
+status: 3
+tags: []
+user_id: demo1

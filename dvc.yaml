@@ -17,4 +17,3 @@ stages:
       - data/mnist/test.parquet
     outs:
       - artifacts
-      - mlruns

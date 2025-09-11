@@ -1,0 +1,10 @@
+artifact_location: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/models/m-29efcd441b6347ee8d7c41db74370f8d/artifacts
+creation_timestamp: 1757348873923
+experiment_id: '271458266826723899'
+last_updated_timestamp: 1757348875639
+model_id: m-29efcd441b6347ee8d7c41db74370f8d
+model_type: null
+name: model
+source_run_id: ca64ae0b574f48d789bb6e6d123466fc
+status: 2
+status_message: null

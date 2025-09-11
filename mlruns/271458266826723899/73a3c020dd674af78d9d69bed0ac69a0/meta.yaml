@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/73a3c020dd674af78d9d69bed0ac69a0/artifacts
+deleted_time: 1757604651219
+end_time: 1757351297436
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: 73a3c020dd674af78d9d69bed0ac69a0
+run_name: nimble-pug-977
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757351297418
+status: 4
+tags: []
+user_id: demo1

@@ -1,0 +1,23 @@
+artifact_path: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/models/m-f5fb85e3ee3c47a5a29f6498e8f5c1ff/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.9.23
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.8.0+cu128
+mlflow_version: 3.1.4
+model_id: m-f5fb85e3ee3c47a5a29f6498e8f5c1ff
+model_size_bytes: 72412
+model_uuid: m-f5fb85e3ee3c47a5a29f6498e8f5c1ff
+prompts: null
+run_id: 61a9067bc17948db9d809fa9205b3880
+utc_time_created: '2025-09-11 17:03:15.559785'

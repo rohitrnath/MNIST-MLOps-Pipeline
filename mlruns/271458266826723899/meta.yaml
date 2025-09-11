@@ -1,0 +1,6 @@
+artifact_location: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899
+creation_time: 1757348842738
+experiment_id: '271458266826723899'
+last_update_time: 1757348842738
+lifecycle_stage: active
+name: mnist-orca

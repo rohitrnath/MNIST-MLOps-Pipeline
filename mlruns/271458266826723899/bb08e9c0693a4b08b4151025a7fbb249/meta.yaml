@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/bb08e9c0693a4b08b4151025a7fbb249/artifacts
+end_time: 1757606592859
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: bb08e9c0693a4b08b4151025a7fbb249
+run_name: painted-lynx-38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757606591873
+status: 3
+tags: []
+user_id: demo1

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/9861283221bc4663b3d55d70f4fde915/artifacts
+deleted_time: 1757604650634
+end_time: 1757599616516
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: 9861283221bc4663b3d55d70f4fde915
+run_name: rebellious-pig-854
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757599355523
+status: 3
+tags: []
+user_id: demo1

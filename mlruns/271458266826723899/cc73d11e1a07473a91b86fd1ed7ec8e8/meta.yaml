@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/cc73d11e1a07473a91b86fd1ed7ec8e8/artifacts
+deleted_time: 1757604651215
+end_time: 1757351439947
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: cc73d11e1a07473a91b86fd1ed7ec8e8
+run_name: painted-crow-859
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757351430040
+status: 4
+tags: []
+user_id: demo1

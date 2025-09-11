@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/9471ec02fd9b4c02b76c80d7a78c75d0/artifacts
+deleted_time: 1757612419458
+end_time: 1757610923890
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: 9471ec02fd9b4c02b76c80d7a78c75d0
+run_name: valuable-skunk-520
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757610923870
+status: 4
+tags: []
+user_id: demo1

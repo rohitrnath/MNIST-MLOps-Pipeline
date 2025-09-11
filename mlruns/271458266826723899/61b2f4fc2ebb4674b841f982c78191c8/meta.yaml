@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/61b2f4fc2ebb4674b841f982c78191c8/artifacts
+deleted_time: 1757604650620
+end_time: 1757599839087
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: 61b2f4fc2ebb4674b841f982c78191c8
+run_name: rumbling-doe-463
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757599698035
+status: 3
+tags: []
+user_id: demo1

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/9d42057e44184f598032f4eb0f60d447/artifacts
+end_time: 1757608346751
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: active
+run_id: 9d42057e44184f598032f4eb0f60d447
+run_name: illustrious-goat-942
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757608192306
+status: 3
+tags: []
+user_id: demo1

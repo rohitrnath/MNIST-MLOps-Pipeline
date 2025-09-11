@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/1900cfe13f2942e58f55d304a8df8dcb/artifacts
+deleted_time: 1757604651166
+end_time: 1757351599565
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: 1900cfe13f2942e58f55d304a8df8dcb
+run_name: traveling-fish-461
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757351572774
+status: 4
+tags: []
+user_id: demo1
