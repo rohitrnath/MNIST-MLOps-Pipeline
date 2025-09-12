@@ -1,0 +1,15 @@
+artifact_uri: file:///home/demo1/Users/rohit/Project2/Project3/MNIST-MLOps-Pipeline/mlruns/271458266826723899/da9532ca5414496c93845c546e5f6530/artifacts
+deleted_time: 1757713717926
+end_time: 1757711658574
+entry_point_name: ''
+experiment_id: '271458266826723899'
+lifecycle_stage: deleted
+run_id: da9532ca5414496c93845c546e5f6530
+run_name: sneaky-ox-92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757711658532
+status: 4
+tags: []
+user_id: demo1
